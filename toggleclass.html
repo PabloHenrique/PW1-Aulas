@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Adicionando class ao elemento</title>
+        <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+        <style type ="text/css">
+            .vermelho {
+                color: red;
+            }
+            .azul {
+                color: blue;
+            }
+        </style>
+        <script>
+           $(document).ready(function () {
+               var p = $("p");
+                $("button").click(function () {
+                    if(p.hasClass("vermelho")){
+                        p.removeClass("vermelho");
+                        p.addClass("azul");
+                    }else if(p.hasClass("azul")){
+                        p.removeClass("azul");
+                    }else {p.addClass("vermelho");}
+                    $("p").toggleClass("vermelho");
+                });
+            });
+            $(document).ready(function () {
+                $("#b2").click(function () {
+                    $("p").toggleClass("Azul");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Isso é um paragrafo</p>
+        <p>Isso é outro paragrafo</p>
+        <button id="b1">vermelho</button>
+        <button id="b2">azul</button>
+    </body>
+</html>

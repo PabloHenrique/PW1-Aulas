@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function conversao(){
+            var real = parseFloat(document.f1.real.value);
+            var dolar = parseFloat(document.f1.dolar.value);
+            var conversao = real / dolar;
+            document.getElementById("conversao").innerHTML = conversao;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f1" action="">
+            real: <input type="text" name="real"/><br>
+            dolar: <input type="text" name="dolar"/><br>
+            <p id="conversao"></p>
+        </form>
+        <button onclick="conversao()">Calcular</button>
+    </body>
+</html>

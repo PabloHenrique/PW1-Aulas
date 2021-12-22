@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function conversao(){
+            var peso = parseFloat(document.f1.peso.value);
+            var g = (peso * 0.15);
+            var m = (peso * 0.20);
+            document.getElementById("Se você emagrecer 15% do peso, você terá: "+g+"  E se você engordar 20% de seu peso você terá: " +m+ "").innerHTML = conversao;
+        </script>
+    </head>
+    <body>
+        <form name="f1" action="">
+            real: <input type="text" name="g"/><br>
+            dolar: <input type="text" name="m"/><br>
+            <p id="conversao"></p>
+        </form>
+        <button onclick="conversao()">Calcular</button>
+    </body>
+</html>

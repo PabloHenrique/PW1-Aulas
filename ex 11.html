@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            function exibe(){
+            var numero = parseFloat(document.f1.n.value);
+            for (var c = 1; c <= numero; c++){
+                document.write(numero+"<br>");
+                    }
+                }
+        </script>
+    </head>
+    <body onload="exibe()">
+        <form action="" name="f1">
+            Digite um número: <input type="number" name="n"/><br>
+            <p id="exibe"></p>
+        </form>
+    </body>
+</html>

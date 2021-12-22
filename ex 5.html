@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 5</title>
+        <meta charset="UTF-8">
+        <script>
+            function total() {
+                var v1 = parseFloat(prompt("Digite o valor 1: "));
+                var v2 = parseFloat(prompt("Digite o valor 2: "));
+                var total = v1 + v2;
+                if (total > 0){
+                    document.getElementById("total").innerHTML = "O resultado é positivo. " + total;
+                }if(total < 0){
+                    document.getElementById("total ").innerHTML ="O resultado é negativo. "+ total;
+                }if(total == 0){
+                    document.getElementById("total ").innerHTML = "O resultado é nulo. " + total;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" name="f1">
+            Valor 1: <input type="text" name="v1" /><br>
+            Valor 2: <input type="text" name="v2" /><br><br>
+            <p id="total"></p>
+        </form>
+        <button onclick="total()">Calcular</button>
+     </body>
+    
+</html>
